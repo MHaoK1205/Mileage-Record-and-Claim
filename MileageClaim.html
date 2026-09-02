@@ -28,190 +28,81 @@
     line-height: 1.5;
     padding: 32px 20px 80px;
   }
-  h1,h2,h3{
-    font-family: 'Space Grotesk', sans-serif;
-    margin: 0;
-    color: var(--ink);
-  }
+  h1,h2,h3{ font-family: 'Space Grotesk', sans-serif; margin: 0; color: var(--ink); }
   .wrap{ max-width: 1080px; margin: 0 auto; }
 
   header{
-    display:flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    gap: 24px;
-    border-bottom: 2px solid var(--ink);
-    padding-bottom: 18px;
-    margin-bottom: 20px;
-    flex-wrap: wrap;
+    display:flex; justify-content: space-between; align-items: flex-end; gap: 24px;
+    border-bottom: 2px solid var(--ink); padding-bottom: 18px; margin-bottom: 20px; flex-wrap: wrap;
   }
   header h1{ font-size: 28px; letter-spacing: -0.01em; }
   header p{ margin: 6px 0 0; color: var(--ink-soft); font-size: 14px; max-width: 46ch; }
   .rate-box{
-    display:flex; align-items:center; gap:10px;
-    background: var(--panel);
-    border: 1px solid var(--rule);
-    padding: 10px 14px;
-    white-space: nowrap;
+    display:flex; align-items:center; gap:10px; background: var(--panel);
+    border: 1px solid var(--rule); padding: 10px 14px; white-space: nowrap;
   }
   .rate-box label{ font-size: 12px; color: var(--ink-soft); }
   .rate-box input{
-    width: 74px;
-    font-family: 'JetBrains Mono', monospace;
-    font-weight: 600;
-    font-size: 15px;
-    border: none;
-    border-bottom: 1px solid var(--ink);
-    background: transparent;
-    color: var(--ink);
-    padding: 2px 4px;
+    width: 74px; font-family: 'JetBrains Mono', monospace; font-weight: 600; font-size: 15px;
+    border: none; border-bottom: 1px solid var(--ink); background: transparent; color: var(--ink); padding: 2px 4px;
   }
   .rate-box input:focus{ outline: none; border-color: var(--amber-deep); }
   .rate-box span.unit{ font-size: 12px; color: var(--ink-soft); }
 
-  .tabs{
-    display:flex;
-    gap: 4px;
-    margin-bottom: 20px;
-    border-bottom: 1px solid var(--rule);
-  }
+  .tabs{ display:flex; gap: 4px; margin-bottom: 20px; border-bottom: 1px solid var(--rule); }
   .tab-btn{
-    background: transparent;
-    border: none;
-    font-family: 'Space Grotesk', sans-serif;
-    font-weight: 600;
-    font-size: 14px;
-    padding: 10px 6px;
-    margin-right: 20px;
-    color: var(--ink-soft);
-    cursor: pointer;
-    border-bottom: 2px solid transparent;
+    background: transparent; border: none; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 14px;
+    padding: 10px 6px; margin-right: 20px; color: var(--ink-soft); cursor: pointer; border-bottom: 2px solid transparent;
   }
-  .tab-btn.active{
-    color: var(--ink);
-    border-bottom: 2px solid var(--amber);
-  }
+  .tab-btn.active{ color: var(--ink); border-bottom: 2px solid var(--amber); }
 
   .odometer{
-    background: var(--ink);
-    color: var(--paper);
-    padding: 22px 26px;
-    display:flex;
-    align-items: baseline;
-    justify-content: space-between;
-    gap: 16px;
-    flex-wrap: wrap;
-    margin-bottom: 28px;
+    background: var(--ink); color: var(--paper); padding: 22px 26px; display:flex;
+    align-items: baseline; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-bottom: 28px;
   }
-  .odometer .label{
-    font-family: 'Space Grotesk', sans-serif;
-    font-size: 13px;
-    letter-spacing: 0.02em;
-    color: #B9C4BC;
-  }
-  .odometer .digits{
-    font-family: 'JetBrains Mono', monospace;
-    font-weight: 700;
-    font-size: 40px;
-    letter-spacing: 0.02em;
-    color: var(--amber);
-  }
-  .odometer .sub{
-    font-size: 12px;
-    color: #B9C4BC;
-  }
-  .odometer .period{
-    font-family: 'Space Grotesk', sans-serif;
-    font-size: 13px;
-    color: var(--amber);
-    font-weight: 600;
-  }
+  .odometer .label{ font-family: 'Space Grotesk', sans-serif; font-size: 13px; letter-spacing: 0.02em; color: #B9C4BC; }
+  .odometer .digits{ font-family: 'JetBrains Mono', monospace; font-weight: 700; font-size: 40px; letter-spacing: 0.02em; color: var(--amber); }
+  .odometer .sub{ font-size: 12px; color: #B9C4BC; }
+  .odometer .period{ font-family: 'Space Grotesk', sans-serif; font-size: 13px; color: var(--amber); font-weight: 600; }
 
-  .grid{
-    display: grid;
-    grid-template-columns: 320px 1fr;
-    gap: 24px;
-    align-items: start;
-  }
-  @media (max-width: 760px){
-    .grid{ grid-template-columns: 1fr; }
-  }
+  .grid{ display: grid; grid-template-columns: 320px 1fr; gap: 24px; align-items: start; }
+  @media (max-width: 760px){ .grid{ grid-template-columns: 1fr; } }
 
-  .panel{
-    background: var(--panel);
-    border: 1px solid var(--rule);
-    padding: 20px;
-  }
+  .panel{ background: var(--panel); border: 1px solid var(--rule); padding: 20px; }
   .panel h2{ font-size: 16px; margin-bottom: 4px; }
   .panel .hint{ font-size: 12px; color: var(--ink-soft); margin-bottom: 16px; }
 
   .field{ margin-bottom: 14px; }
   .field label{ display:block; font-size: 12px; color: var(--ink-soft); margin-bottom: 5px; }
   .field input, .field select{
-    width: 100%;
-    padding: 9px 10px;
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 14px;
-    border: 1px solid var(--rule);
-    background: var(--paper);
-    color: var(--ink);
+    width: 100%; padding: 9px 10px; font-family: 'JetBrains Mono', monospace; font-size: 14px;
+    border: 1px solid var(--rule); background: var(--paper); color: var(--ink);
   }
   .field input:focus, .field select:focus{ outline: none; border-color: var(--teal-deep); background: #fff; }
 
   .calc-preview{
-    background: var(--paper);
-    border: 1px dashed var(--rule);
-    padding: 12px 14px;
-    font-size: 13px;
-    margin-bottom: 16px;
-    color: var(--ink-soft);
+    background: var(--paper); border: 1px dashed var(--rule); padding: 12px 14px; font-size: 13px;
+    margin-bottom: 16px; color: var(--ink-soft);
   }
   .calc-preview strong{ color: var(--ink); }
   .calc-preview .claim{ color: var(--teal-deep); font-weight: 700; font-size: 16px; }
 
-  button{
-    font-family: 'Space Grotesk', sans-serif;
-    font-weight: 600;
-    font-size: 14px;
-    border: none;
-    cursor: pointer;
-    padding: 11px 16px;
-  }
+  button{ font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 14px; border: none; cursor: pointer; padding: 11px 16px; }
   .btn-primary{ background: var(--teal); color: #fff; width: 100%; }
   .btn-primary:hover{ background: var(--teal-deep); }
   .btn-primary:disabled{ background: var(--rule); cursor: not-allowed; }
 
   .error{ color: var(--danger); font-size: 12px; margin: -6px 0 12px; min-height: 14px; }
 
-  .ledger-head{
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 14px;
-    gap: 12px;
-    flex-wrap: wrap;
-  }
+  .ledger-head{ display:flex; justify-content: space-between; align-items: center; margin-bottom: 14px; gap: 12px; flex-wrap: wrap; }
   .ledger-head h2{ font-size: 16px; }
   .actions{ display:flex; gap: 8px; }
-  .btn-ghost{
-    background: transparent;
-    color: var(--ink);
-    border: 1px solid var(--ink);
-    padding: 8px 12px;
-    font-size: 13px;
-  }
+  .btn-ghost{ background: transparent; color: var(--ink); border: 1px solid var(--ink); padding: 8px 12px; font-size: 13px; }
   .btn-ghost:hover{ background: var(--ink); color: var(--paper); }
   .btn-ghost:disabled{ opacity: 0.4; cursor: not-allowed; }
 
   .employee-group{ border: 1px solid var(--rule); margin-bottom: 16px; background: var(--panel); }
-  .employee-bar{
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 12px 16px;
-    border-bottom: 1px solid var(--rule);
-    background: #fff;
-  }
+  .employee-bar{ display:flex; justify-content: space-between; align-items: center; padding: 12px 16px; border-bottom: 1px solid var(--rule); background: #fff; }
   .employee-bar .name{ font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 15px; }
   .employee-bar .subtotal{ font-weight: 700; color: var(--teal-deep); font-size: 15px; }
   table{ width:100%; border-collapse: collapse; font-size: 13px; }
@@ -223,40 +114,21 @@
   .row-remove{ background: transparent; border: none; color: var(--danger); cursor: pointer; font-size: 13px; padding: 4px 6px; }
   .row-remove:hover{ text-decoration: underline; }
 
-  .empty-state{
-    border: 1px dashed var(--rule);
-    padding: 32px 20px;
-    text-align: center;
-    color: var(--ink-soft);
-    font-size: 13px;
-  }
+  .empty-state{ border: 1px dashed var(--rule); padding: 32px 20px; text-align: center; color: var(--ink-soft); font-size: 13px; }
   .empty-state strong{ display:block; color: var(--ink); font-family:'Space Grotesk',sans-serif; font-size: 15px; margin-bottom: 6px; }
 
-  .grand-total{ display:flex; justify-content: flex-end; gap: 10px; align-items: baseline; padding: 14px 4px 0; font-size: 14px; }
-  .grand-total .val{ font-size: 20px; font-weight: 700; color: var(--ink); }
-
-  .history-controls{
-    display:flex;
-    align-items: flex-end;
-    gap: 14px;
-    margin-bottom: 18px;
-    flex-wrap: wrap;
-  }
+  .history-controls{ display:flex; align-items: flex-end; gap: 14px; margin-bottom: 18px; flex-wrap: wrap; }
   .history-controls .field{ margin-bottom: 0; min-width: 220px; }
-  .history-note{
-    font-size: 12px;
-    color: var(--ink-soft);
-    margin-bottom: 20px;
-  }
+  .history-note{ font-size: 12px; color: var(--ink-soft); margin-bottom: 20px; }
 
-  footer{
-    max-width: 1080px;
-    margin: 40px auto 0;
-    font-size: 11px;
-    color: var(--ink-soft);
-    border-top: 1px solid var(--rule);
-    padding-top: 14px;
+  footer{ max-width: 1080px; margin: 40px auto 0; font-size: 11px; color: var(--ink-soft); border-top: 1px solid var(--rule); padding-top: 14px; }
+
+  .setup-banner{
+    display:none; max-width: 720px; margin: 60px auto; background: var(--panel); border: 2px solid var(--danger);
+    padding: 24px 26px; font-size: 14px; line-height: 1.7;
   }
+  .setup-banner h2{ color: var(--danger); font-size: 18px; margin-bottom: 10px; }
+  .setup-banner code{ background: #fff; border: 1px solid var(--rule); padding: 1px 6px; font-size: 13px; }
 
   @media print{
     body{ background: #fff; padding: 0; }
@@ -269,12 +141,19 @@
 </style>
 </head>
 <body>
-<div class="wrap">
+
+<div class="setup-banner" id="setupBanner">
+  <h2>Firebase isn't set up yet</h2>
+  <p>This page is built to share mileage records with everyone who opens the link, using a free Firebase database. Before it will work, open this file's code, find the <code>firebaseConfig</code> block near the top of the script, and replace the six <code>PASTE_...</code> placeholder values with your own project's config from the Firebase console.</p>
+  <p>Once that's saved and re-uploaded, reload this page.</p>
+</div>
+
+<div class="wrap" id="mainApp" style="display:none;">
 
   <header>
     <div>
       <h1>Mileage Claim Log</h1>
-      <p>Record each employee's trips and get the claim amount worked out automatically.</p>
+      <p>Shared with your team &mdash; everyone who opens this link sees the same records.</p>
     </div>
     <div class="rate-box">
       <label for="rateInput">Claim rate</label>
@@ -302,7 +181,7 @@
     <div class="grid">
       <div class="panel form-panel">
         <h2>Log a trip</h2>
-        <p class="hint">Fill this in each time an employee goes out. Entries always go into the current month.</p>
+        <p class="hint">Fill this in each time an employee goes out. Entries always go into the current month, and everyone with the link will see it right away.</p>
 
         <div class="field">
           <label for="empName">Employee name</label>
@@ -357,325 +236,344 @@
   </div>
 
   <footer>
-    Data is saved in this browser only. Open the downloaded file directly (not the in-chat preview) for month-to-month history to be remembered. Export to CSV or print if you need a copy elsewhere.
+    Records are stored in a shared online database, so everyone who opens this link sees the same data in real time. Export to CSV or print if you need a copy elsewhere.
   </footer>
 
 </div>
 
-<script>
-  const STORAGE_KEY = 'mileageClaimLog_v1';
-  let data = null; // { rate, currentMonth, trips: [], history: { 'YYYY-MM': [trips] } }
+<script type="module">
+  import { initializeApp } from 'https://www.gstatic.com/firebasejs/12.17.1/firebase-app.js';
+  import {
+    getFirestore, collection, addDoc, deleteDoc, doc, onSnapshot, setDoc
+  } from 'https://www.gstatic.com/firebasejs/12.17.1/firebase-firestore.js';
 
-  // Some preview environments block real browser storage and throw when it's
-  // even touched. Test it once up front and fall back to an in-memory store
-  // so the app still works for the current session either way.
-  function getSafeStorage(){
-    try{
-      const testKey = '__mileage_test__';
-      window.localStorage.setItem(testKey, '1');
-      window.localStorage.removeItem(testKey);
-      return window.localStorage;
-    }catch(e){
-      const mem = {};
-      return {
-        getItem: k => (Object.prototype.hasOwnProperty.call(mem, k) ? mem[k] : null),
-        setItem: (k, v) => { mem[k] = v; },
-        removeItem: k => { delete mem[k]; }
-      };
+  // ---- Paste your Firebase project's config here (Project settings > Your apps) ----
+  const firebaseConfig = {
+    apiKey: "PASTE_YOUR_API_KEY",
+    authDomain: "PASTE_YOUR_PROJECT_ID.firebaseapp.com",
+    projectId: "PASTE_YOUR_PROJECT_ID",
+    storageBucket: "PASTE_YOUR_PROJECT_ID.appspot.com",
+    messagingSenderId: "PASTE_YOUR_SENDER_ID",
+    appId: "PASTE_YOUR_APP_ID"
+  };
+  // ------------------------------------------------------------------------------
+
+  const NOT_CONFIGURED = firebaseConfig.apiKey.startsWith('PASTE_');
+
+  if (NOT_CONFIGURED){
+    document.getElementById('setupBanner').style.display = 'block';
+  } else {
+    document.getElementById('mainApp').style.display = 'block';
+    runApp();
+  }
+
+  function runApp(){
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+    const tripsCol = collection(db, 'trips');
+    const rateDocRef = doc(db, 'settings', 'global');
+
+    let allTrips = [];
+    let rate = 0.70;
+    const currentMonth = monthKey(new Date());
+
+    // ---- DOM refs ----
+    const rateInput = document.getElementById('rateInput');
+    const empName = document.getElementById('empName');
+    const tripDate = document.getElementById('tripDate');
+    const startKm = document.getElementById('startKm');
+    const endKm = document.getElementById('endKm');
+    const previewBox = document.getElementById('previewBox');
+    const formError = document.getElementById('formError');
+    const addBtn = document.getElementById('addBtn');
+    const ledgerBody = document.getElementById('ledgerBody');
+    const grandTotalDigits = document.getElementById('grandTotalDigits');
+    const odometerSub = document.getElementById('odometerSub');
+    const currentPeriodLabel = document.getElementById('currentPeriodLabel');
+
+    const tabCurrentBtn = document.getElementById('tabCurrentBtn');
+    const tabHistoryBtn = document.getElementById('tabHistoryBtn');
+    const currentView = document.getElementById('currentView');
+    const historyView = document.getElementById('historyView');
+    const historySelect = document.getElementById('historySelect');
+    const historyLedgerBody = document.getElementById('historyLedgerBody');
+    const historyPrintBtn = document.getElementById('historyPrintBtn');
+    const historyExportBtn = document.getElementById('historyExportBtn');
+
+    function fmtRM(n){ return 'RM ' + n.toLocaleString('en-MY', {minimumFractionDigits:2, maximumFractionDigits:2}); }
+    function fmtKm(n){ return n.toLocaleString('en-MY', {minimumFractionDigits:1, maximumFractionDigits:1}) + ' km'; }
+    function todayStr(){ return new Date().toISOString().slice(0,10); }
+    function escapeHtml(str){ const div = document.createElement('div'); div.textContent = str; return div.innerHTML; }
+
+    function monthKeyFn(d){ return d.getFullYear() + '-' + String(d.getMonth()+1).padStart(2,'0'); }
+    function monthKey(d){ return monthKeyFn(d); }
+    function monthLabel(key){
+      const [y,m] = key.split('-').map(Number);
+      const names = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+      return names[m-1] + ' ' + y;
     }
-  }
-  const storage = getSafeStorage();
-
-  function monthKey(d){
-    return d.getFullYear() + '-' + String(d.getMonth()+1).padStart(2,'0');
-  }
-  function monthLabel(key){
-    const [y,m] = key.split('-').map(Number);
-    const names = ['January','February','March','April','May','June','July','August','September','October','November','December'];
-    return names[m-1] + ' ' + y;
-  }
-  function monthsBefore(key, n){
-    const [y,m] = key.split('-').map(Number);
-    const d = new Date(y, m-1-n, 1);
-    return monthKey(d);
-  }
-
-  function loadData(){
-    let raw = null;
-    try{ raw = storage.getItem(STORAGE_KEY); }catch(e){ raw = null; }
-    const thisMonth = monthKey(new Date());
-
-    if (!raw){
-      return { rate: 0.70, currentMonth: thisMonth, trips: [], history: {} };
+    function monthsBefore(key, n){
+      const [y,m] = key.split('-').map(Number);
+      const d = new Date(y, m-1-n, 1);
+      return monthKeyFn(d);
     }
-    let parsed;
-    try{ parsed = JSON.parse(raw); }catch(e){ parsed = { rate: 0.70, currentMonth: thisMonth, trips: [], history: {} }; }
-    if (!parsed.history) parsed.history = {};
-    if (!parsed.trips) parsed.trips = [];
-    if (typeof parsed.rate !== 'number') parsed.rate = 0.70;
 
-    // Roll forward: refresh on the 1st of each new month
-    if (parsed.currentMonth !== thisMonth){
-      if (parsed.trips.length > 0){
-        parsed.history[parsed.currentMonth] = parsed.trips;
+    tripDate.value = todayStr();
+    currentPeriodLabel.textContent = monthLabel(currentMonth);
+
+    function currentDistance(){
+      const s = parseFloat(startKm.value);
+      const e = parseFloat(endKm.value);
+      if (isNaN(s) || isNaN(e)) return null;
+      return e - s;
+    }
+
+    function updatePreview(){
+      const dist = currentDistance();
+      formError.textContent = '';
+      if (dist === null){
+        previewBox.innerHTML = 'Distance: <strong>&mdash;</strong> &nbsp;&middot;&nbsp; Claim: <span class="claim">&mdash;</span>';
+        addBtn.disabled = false;
+        return;
       }
-      parsed.currentMonth = thisMonth;
-      parsed.trips = [];
-    }
-
-    pruneHistory(parsed);
-    return parsed;
-  }
-
-  function pruneHistory(d){
-    const cutoff = monthsBefore(d.currentMonth, 12); // keep 12 months before current
-    Object.keys(d.history).forEach(key => {
-      if (key < cutoff){
-        delete d.history[key];
+      if (dist < 0){
+        previewBox.innerHTML = 'Distance: <strong>&mdash;</strong> &nbsp;&middot;&nbsp; Claim: <span class="claim">&mdash;</span>';
+        formError.textContent = 'Mileage end must be greater than mileage start.';
+        addBtn.disabled = true;
+        return;
       }
-    });
-  }
-
-  function saveData(){
-    try{ storage.setItem(STORAGE_KEY, JSON.stringify(data)); }catch(e){ /* storage unavailable */ }
-  }
-
-  // ---- DOM refs ----
-  const rateInput = document.getElementById('rateInput');
-  const empName = document.getElementById('empName');
-  const tripDate = document.getElementById('tripDate');
-  const startKm = document.getElementById('startKm');
-  const endKm = document.getElementById('endKm');
-  const previewBox = document.getElementById('previewBox');
-  const formError = document.getElementById('formError');
-  const addBtn = document.getElementById('addBtn');
-  const ledgerBody = document.getElementById('ledgerBody');
-  const grandTotalDigits = document.getElementById('grandTotalDigits');
-  const odometerSub = document.getElementById('odometerSub');
-  const currentPeriodLabel = document.getElementById('currentPeriodLabel');
-  const tabCurrentBtn = document.getElementById('tabCurrentBtn');
-  const tabHistoryBtn = document.getElementById('tabHistoryBtn');
-  const currentView = document.getElementById('currentView');
-  const historyView = document.getElementById('historyView');
-  const historySelect = document.getElementById('historySelect');
-  const historyLedgerBody = document.getElementById('historyLedgerBody');
-  const historyPrintBtn = document.getElementById('historyPrintBtn');
-  const historyExportBtn = document.getElementById('historyExportBtn');
-
-  function fmtRM(n){ return 'RM ' + n.toLocaleString('en-MY', {minimumFractionDigits:2, maximumFractionDigits:2}); }
-  function fmtKm(n){ return n.toLocaleString('en-MY', {minimumFractionDigits:1, maximumFractionDigits:1}) + ' km'; }
-  function todayStr(){ return new Date().toISOString().slice(0,10); }
-  function escapeHtml(str){ const div = document.createElement('div'); div.textContent = str; return div.innerHTML; }
-
-  function currentDistance(){
-    const s = parseFloat(startKm.value);
-    const e = parseFloat(endKm.value);
-    if (isNaN(s) || isNaN(e)) return null;
-    return e - s;
-  }
-
-  function updatePreview(){
-    const dist = currentDistance();
-    formError.textContent = '';
-    if (dist === null){
-      previewBox.innerHTML = 'Distance: <strong>&mdash;</strong> &nbsp;&middot;&nbsp; Claim: <span class="claim">&mdash;</span>';
       addBtn.disabled = false;
-      return;
+      const claim = dist * rate;
+      previewBox.innerHTML = 'Distance: <strong>' + fmtKm(dist) + '</strong> &nbsp;&middot;&nbsp; Claim: <span class="claim">' + fmtRM(claim) + '</span>';
     }
-    if (dist < 0){
-      previewBox.innerHTML = 'Distance: <strong>&mdash;</strong> &nbsp;&middot;&nbsp; Claim: <span class="claim">&mdash;</span>';
-      formError.textContent = 'Mileage end must be greater than mileage start.';
+
+    [startKm, endKm].forEach(el => el.addEventListener('input', updatePreview));
+
+    rateInput.addEventListener('input', () => {
+      const r = parseFloat(rateInput.value);
+      if (isNaN(r)) return;
+      rate = r;
+      updatePreview();
+      renderCurrent();
+      setDoc(rateDocRef, { rate: r }).catch(() => {});
+    });
+
+    addBtn.addEventListener('click', async () => {
+      const name = empName.value.trim();
+      const date = tripDate.value;
+      const dist = currentDistance();
+
+      if (!name){ formError.textContent = "Enter the employee's name."; empName.focus(); return; }
+      if (!date){ formError.textContent = 'Pick the date the employee went out.'; tripDate.focus(); return; }
+      if (dist === null){ formError.textContent = 'Enter both mileage start and mileage end.'; return; }
+      if (dist < 0){ formError.textContent = 'Mileage end must be greater than mileage start.'; return; }
+
       addBtn.disabled = true;
-      return;
-    }
-    addBtn.disabled = false;
-    const claim = dist * data.rate;
-    previewBox.innerHTML = 'Distance: <strong>' + fmtKm(dist) + '</strong> &nbsp;&middot;&nbsp; Claim: <span class="claim">' + fmtRM(claim) + '</span>';
-  }
-
-  [startKm, endKm].forEach(el => el.addEventListener('input', updatePreview));
-  rateInput.addEventListener('input', () => {
-    const r = parseFloat(rateInput.value);
-    data.rate = isNaN(r) ? 0 : r;
-    saveData();
-    updatePreview();
-    renderCurrent();
-  });
-
-  addBtn.addEventListener('click', () => {
-    const name = empName.value.trim();
-    const date = tripDate.value;
-    const dist = currentDistance();
-
-    if (!name){ formError.textContent = "Enter the employee's name."; empName.focus(); return; }
-    if (!date){ formError.textContent = 'Pick the date the employee went out.'; tripDate.focus(); return; }
-    if (dist === null){ formError.textContent = 'Enter both mileage start and mileage end.'; return; }
-    if (dist < 0){ formError.textContent = 'Mileage end must be greater than mileage start.'; return; }
-
-    data.trips.push({
-      id: Date.now() + Math.random(),
-      name, date,
-      start: parseFloat(startKm.value),
-      end: parseFloat(endKm.value),
-      distance: dist,
-      rate: data.rate,
-      claim: dist * data.rate
+      try{
+        await addDoc(tripsCol, {
+          name, date,
+          start: parseFloat(startKm.value),
+          end: parseFloat(endKm.value),
+          distance: dist,
+          rate: rate,
+          claim: dist * rate,
+          month: currentMonth
+        });
+        startKm.value = '';
+        endKm.value = '';
+        formError.textContent = '';
+        updatePreview();
+      }catch(e){
+        formError.textContent = 'Could not save the trip. Check your connection and try again.';
+        addBtn.disabled = false;
+      }
     });
 
-    startKm.value = '';
-    endKm.value = '';
-    formError.textContent = '';
-    saveData();
-    updatePreview();
-    renderCurrent();
-  });
-
-  function removeTrip(id){
-    data.trips = data.trips.filter(t => t.id !== id);
-    saveData();
-    renderCurrent();
-  }
-  window.removeTrip = removeTrip;
-
-  function groupByEmployee(trips){
-    const groups = {};
-    trips.forEach(t => {
-      if (!groups[t.name]) groups[t.name] = [];
-      groups[t.name].push(t);
-    });
-    return groups;
-  }
-
-  function renderLedgerInto(container, trips, emptyMsg){
-    const groups = groupByEmployee(trips);
-    const names = Object.keys(groups).sort((a,b) => a.localeCompare(b));
-
-    if (names.length === 0){
-      container.innerHTML = '<div class="empty-state"><strong>No trips</strong>' + emptyMsg + '</div>';
-      return { grandTotal: 0, totalKm: 0, totalTrips: 0 };
+    async function removeTrip(id){
+      try{ await deleteDoc(doc(db, 'trips', id)); }
+      catch(e){ alert('Could not remove that trip. Check your connection and try again.'); }
     }
 
-    let html = '';
-    let grandTotal = 0, totalKm = 0, totalTrips = 0;
+    ledgerBody.addEventListener('click', (e) => {
+      const btn = e.target.closest('.row-remove');
+      if (btn) removeTrip(btn.dataset.tripId);
+    });
 
-    names.forEach(name => {
-      const list = groups[name].slice().sort((a,b) => a.date.localeCompare(b.date));
-      let subtotal = 0, rows = '';
-      list.forEach(t => {
-        subtotal += t.claim;
-        totalKm += t.distance;
-        totalTrips += 1;
-        rows += '<tr>' +
-          '<td>' + t.date + '</td>' +
-          '<td class="num">' + t.start.toFixed(1) + '</td>' +
-          '<td class="num">' + t.end.toFixed(1) + '</td>' +
-          '<td class="num">' + fmtKm(t.distance) + '</td>' +
-          '<td class="claim">' + fmtRM(t.claim) + '</td>' +
-          (container === ledgerBody ? '<td><button class="row-remove" onclick="removeTrip(' + t.id + ')">Remove</button></td>' : '<td></td>') +
-        '</tr>';
+    function groupByEmployee(trips){
+      const groups = {};
+      trips.forEach(t => {
+        if (!groups[t.name]) groups[t.name] = [];
+        groups[t.name].push(t);
       });
-      grandTotal += subtotal;
-      html += '<div class="employee-group">' +
-        '<div class="employee-bar"><span class="name">' + escapeHtml(name) + '</span><span class="subtotal">' + fmtRM(subtotal) + '</span></div>' +
-        '<table><thead><tr><th>Date</th><th>Start km</th><th>End km</th><th>Distance</th><th>Claim</th><th></th></tr></thead>' +
-        '<tbody>' + rows + '</tbody></table>' +
-      '</div>';
-    });
-
-    container.innerHTML = html;
-    return { grandTotal, totalKm, totalTrips };
-  }
-
-  function renderCurrent(){
-    currentPeriodLabel.textContent = monthLabel(data.currentMonth);
-    const { grandTotal, totalKm, totalTrips } = renderLedgerInto(
-      ledgerBody, data.trips,
-      "Add a trip on the left to start this month's ledger."
-    );
-    grandTotalDigits.textContent = fmtRM(grandTotal);
-    odometerSub.textContent = totalTrips + (totalTrips === 1 ? ' trip logged' : ' trips logged') + ' · ' + fmtKm(totalKm) + ' total';
-  }
-
-  function historyMonthKeys(){
-    return Object.keys(data.history).sort((a,b) => b.localeCompare(a));
-  }
-
-  function renderHistorySelect(){
-    const keys = historyMonthKeys();
-    if (keys.length === 0){
-      historySelect.innerHTML = '<option value="">No history yet</option>';
-      historyPrintBtn.disabled = true;
-      historyExportBtn.disabled = true;
-      renderLedgerInto(historyLedgerBody, [], 'Past months will appear here once a new month starts.');
-      return;
+      return groups;
     }
-    historyPrintBtn.disabled = false;
-    historyExportBtn.disabled = false;
-    historySelect.innerHTML = keys.map(k => '<option value="' + k + '">' + monthLabel(k) + '</option>').join('');
-    renderSelectedHistory();
-  }
 
-  function renderSelectedHistory(){
-    const key = historySelect.value;
-    const trips = data.history[key] || [];
-    renderLedgerInto(historyLedgerBody, trips, 'No trips were recorded for this month.');
-  }
+    function renderLedgerInto(container, trips, emptyMsg, editable){
+      const groups = groupByEmployee(trips);
+      const names = Object.keys(groups).sort((a,b) => a.localeCompare(b));
 
-  historySelect.addEventListener('change', renderSelectedHistory);
+      if (names.length === 0){
+        container.innerHTML = '<div class="empty-state"><strong>No trips</strong>' + emptyMsg + '</div>';
+        return { grandTotal: 0, totalKm: 0, totalTrips: 0 };
+      }
 
-  function tripsToCsv(trips){
-    let csv = 'Employee,Date,Start km,End km,Distance km,Rate RM/km,Claim RM\n';
-    trips.slice().sort((a,b) => a.name.localeCompare(b.name) || a.date.localeCompare(b.date)).forEach(t => {
-      csv += [t.name, t.date, t.start.toFixed(1), t.end.toFixed(1), t.distance.toFixed(1), t.rate.toFixed(2), t.claim.toFixed(2)]
-        .map(v => '"' + String(v).replace(/"/g,'""') + '"').join(',') + '\n';
+      let html = '';
+      let grandTotal = 0, totalKm = 0, totalTrips = 0;
+
+      names.forEach(name => {
+        const list = groups[name].slice().sort((a,b) => a.date.localeCompare(b.date));
+        let subtotal = 0, rows = '';
+        list.forEach(t => {
+          subtotal += t.claim;
+          totalKm += t.distance;
+          totalTrips += 1;
+          rows += '<tr>' +
+            '<td>' + t.date + '</td>' +
+            '<td class="num">' + t.start.toFixed(1) + '</td>' +
+            '<td class="num">' + t.end.toFixed(1) + '</td>' +
+            '<td class="num">' + fmtKm(t.distance) + '</td>' +
+            '<td class="claim">' + fmtRM(t.claim) + '</td>' +
+            (editable ? '<td><button class="row-remove" data-trip-id="' + escapeHtml(t.id) + '">Remove</button></td>' : '<td></td>') +
+          '</tr>';
+        });
+        grandTotal += subtotal;
+        html += '<div class="employee-group">' +
+          '<div class="employee-bar"><span class="name">' + escapeHtml(name) + '</span><span class="subtotal">' + fmtRM(subtotal) + '</span></div>' +
+          '<table><thead><tr><th>Date</th><th>Start km</th><th>End km</th><th>Distance</th><th>Claim</th><th></th></tr></thead>' +
+          '<tbody>' + rows + '</tbody></table>' +
+        '</div>';
+      });
+
+      container.innerHTML = html;
+      return { grandTotal, totalKm, totalTrips };
+    }
+
+    function renderCurrent(){
+      const trips = allTrips.filter(t => t.month === currentMonth);
+      const { grandTotal, totalKm, totalTrips } = renderLedgerInto(
+        ledgerBody, trips,
+        "Add a trip on the left to start this month's ledger.",
+        true
+      );
+      grandTotalDigits.textContent = fmtRM(grandTotal);
+      odometerSub.textContent = totalTrips + (totalTrips === 1 ? ' trip logged' : ' trips logged') + ' \u00b7 ' + fmtKm(totalKm) + ' total';
+    }
+
+    function historyMonthKeys(){
+      const set = new Set();
+      allTrips.forEach(t => { if (t.month !== currentMonth) set.add(t.month); });
+      return Array.from(set).sort((a,b) => b.localeCompare(a));
+    }
+
+    function renderHistorySelect(){
+      const keys = historyMonthKeys();
+      if (keys.length === 0){
+        historySelect.innerHTML = '<option value="">No history yet</option>';
+        historyPrintBtn.disabled = true;
+        historyExportBtn.disabled = true;
+        renderLedgerInto(historyLedgerBody, [], 'Past months will appear here once a new month starts.', false);
+        return;
+      }
+      historyPrintBtn.disabled = false;
+      historyExportBtn.disabled = false;
+      const prevSelected = historySelect.value;
+      historySelect.innerHTML = keys.map(k => '<option value="' + k + '">' + monthLabel(k) + '</option>').join('');
+      if (keys.includes(prevSelected)) historySelect.value = prevSelected;
+      renderSelectedHistory();
+    }
+
+    function renderSelectedHistory(){
+      const key = historySelect.value;
+      const trips = allTrips.filter(t => t.month === key);
+      renderLedgerInto(historyLedgerBody, trips, 'No trips were recorded for this month.', false);
+    }
+
+    historySelect.addEventListener('change', renderSelectedHistory);
+
+    function tripsToCsv(trips){
+      let csv = 'Employee,Date,Start km,End km,Distance km,Rate RM/km,Claim RM\n';
+      trips.slice().sort((a,b) => a.name.localeCompare(b.name) || a.date.localeCompare(b.date)).forEach(t => {
+        csv += [t.name, t.date, t.start.toFixed(1), t.end.toFixed(1), t.distance.toFixed(1), t.rate.toFixed(2), t.claim.toFixed(2)]
+          .map(v => '"' + String(v).replace(/"/g,'""') + '"').join(',') + '\n';
+      });
+      return csv;
+    }
+    function downloadCsv(csv, filename){
+      const blob = new Blob([csv], {type: 'text/csv;charset=utf-8;'});
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url; a.download = filename;
+      document.body.appendChild(a); a.click(); document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    }
+
+    document.getElementById('exportBtn').addEventListener('click', () => {
+      const trips = allTrips.filter(t => t.month === currentMonth);
+      if (trips.length === 0) return;
+      downloadCsv(tripsToCsv(trips), 'mileage-claim-' + currentMonth + '.csv');
     });
-    return csv;
-  }
-  function downloadCsv(csv, filename){
-    const blob = new Blob([csv], {type: 'text/csv;charset=utf-8;'});
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url; a.download = filename;
-    document.body.appendChild(a); a.click(); document.body.removeChild(a);
-    URL.revokeObjectURL(url);
-  }
+    document.getElementById('printBtn').addEventListener('click', () => window.print());
 
-  document.getElementById('exportBtn').addEventListener('click', () => {
-    if (data.trips.length === 0) return;
-    downloadCsv(tripsToCsv(data.trips), 'mileage-claim-' + data.currentMonth + '.csv');
-  });
-  document.getElementById('printBtn').addEventListener('click', () => window.print());
+    historyExportBtn.addEventListener('click', () => {
+      const key = historySelect.value;
+      const trips = allTrips.filter(t => t.month === key);
+      if (trips.length === 0) return;
+      downloadCsv(tripsToCsv(trips), 'mileage-claim-' + key + '.csv');
+    });
+    historyPrintBtn.addEventListener('click', () => window.print());
 
-  historyExportBtn.addEventListener('click', () => {
-    const key = historySelect.value;
-    const trips = data.history[key] || [];
-    if (trips.length === 0) return;
-    downloadCsv(tripsToCsv(trips), 'mileage-claim-' + key + '.csv');
-  });
-  historyPrintBtn.addEventListener('click', () => window.print());
+    function showTab(tab){
+      const isCurrent = tab === 'current';
+      currentView.style.display = isCurrent ? '' : 'none';
+      historyView.style.display = isCurrent ? 'none' : '';
+      tabCurrentBtn.classList.toggle('active', isCurrent);
+      tabHistoryBtn.classList.toggle('active', !isCurrent);
+      if (!isCurrent) renderHistorySelect();
+    }
+    tabCurrentBtn.addEventListener('click', () => showTab('current'));
+    tabHistoryBtn.addEventListener('click', () => showTab('history'));
 
-  function showTab(tab){
-    const isCurrent = tab === 'current';
-    currentView.style.display = isCurrent ? '' : 'none';
-    historyView.style.display = isCurrent ? 'none' : '';
-    tabCurrentBtn.classList.toggle('active', isCurrent);
-    tabHistoryBtn.classList.toggle('active', !isCurrent);
-    if (!isCurrent) renderHistorySelect();
+    function pruneOldTrips(){
+      const cutoff = monthsBefore(currentMonth, 12);
+      allTrips.forEach(t => {
+        if (t.month < cutoff){
+          deleteDoc(doc(db, 'trips', t.id)).catch(() => {});
+        }
+      });
+    }
+
+    function renderActiveView(){
+      renderCurrent();
+      if (historyView.style.display !== 'none') renderHistorySelect();
+    }
+
+    // Live rate sync across everyone
+    onSnapshot(rateDocRef, snap => {
+      if (snap.exists()){
+        rate = snap.data().rate;
+      } else {
+        rate = 0.70;
+        setDoc(rateDocRef, { rate: 0.70 }).catch(() => {});
+      }
+      rateInput.value = rate.toFixed(2);
+      updatePreview();
+      renderActiveView();
+    }, () => {
+      formError.textContent = 'Could not connect to the shared database.';
+    });
+
+    // Live trips sync across everyone
+    onSnapshot(tripsCol, snap => {
+      allTrips = snap.docs.map(d => ({ id: d.id, ...d.data() }));
+      pruneOldTrips();
+      renderActiveView();
+    }, () => {
+      formError.textContent = 'Could not connect to the shared database.';
+    });
+
+    updatePreview();
+    renderCurrent();
   }
-  tabCurrentBtn.addEventListener('click', () => showTab('current'));
-  tabHistoryBtn.addEventListener('click', () => showTab('history'));
-
-  // ---- init ----
-  try{
-    data = loadData();
-  }catch(e){
-    data = { rate: 0.70, currentMonth: monthKey(new Date()), trips: [], history: {} };
-  }
-  saveData();
-  rateInput.value = data.rate.toFixed(2);
-  tripDate.value = todayStr();
-  updatePreview();
-  renderCurrent();
 </script>
 </body>
 </html>
